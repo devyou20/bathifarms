@@ -1,0 +1,16 @@
+# Keep node_modules because HTML references assets from it
+# node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor folders/files
+.vscode/
+.idea/
+*.swp
