@@ -1,0 +1,500 @@
+/* Bathi Farms - Contact Page Styles */
+
+/* Contact Page Layout */
+.contact-page {
+  padding: 80px 0 60px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-head h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(28px, 5vw, 48px);
+  margin-bottom: 15px;
+  color: var(--gold);
+  word-wrap: break-word;
+}
+
+.section-head p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  line-height: 1.6;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(18, 36, 24, 0.4);
+  border: 1px solid rgba(211, 164, 58, 0.15);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background: rgba(18, 36, 24, 0.6);
+  border-color: rgba(211, 164, 58, 0.3);
+  transform: translateX(5px);
+}
+
+.info-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-content h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.info-content p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.info-content a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+  color: var(--gold-2);
+  text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: rgba(211, 164, 58, 0.1);
+  border-radius: 8px;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background: var(--gold);
+  color: var(--bg);
+  transform: translateY(-3px);
+}
+
+/* Farm Visits */
+.farm-visits {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(211, 164, 58, 0.1);
+}
+
+.farm-visits h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: var(--gold);
+}
+
+.farm-visits p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  background: rgba(14, 24, 19, 0.5);
+  border: 1px solid rgba(211, 164, 58, 0.2);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(14, 24, 19, 0.7);
+  box-shadow: 0 0 0 3px rgba(211, 164, 58, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Form Success Message */
+.form-success {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success svg {
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.form-success h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+
+.form-success p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 60px;
+}
+
+.map-section h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--gold);
+  position: relative;
+}
+
+.map-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-2));
+  border-radius: 2px;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.map-responsive iframe {
+  border: 2px solid rgba(211, 164, 58, 0.3) !important;
+  transition: all 0.3s ease;
+}
+
+.map-responsive iframe:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.map-responsive p.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* FAQs */
+.contact-faqs {
+  margin-top: 70px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(211, 164, 58, 0.15);
+}
+
+.contact-faqs h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+  text-align: center;
+  color: var(--gold);
+  position: relative;
+}
+
+.contact-faqs h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-2));
+  border-radius: 2px;
+}
+
+.faq-item {
+  background: rgba(18, 36, 24, 0.5);
+  border: 1px solid rgba(211, 164, 58, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(211, 164, 58, 0.3);
+}
+
+.faq-item h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: var(--gold);
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.faq-item a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.faq-item a:hover {
+  color: var(--gold-2);
+  text-decoration: underline;
+}
+
+/* Light Theme Adjustments */
+[data-theme="light"] .info-card,
+[data-theme="light"] .contact-form,
+[data-theme="light"] .faq-item {
+  background: rgba(240, 229, 215, 0.8);
+  box-shadow: 0 15px 35px rgba(15, 61, 31, 0.08);
+}
+
+[data-theme="light"] .info-card:hover,
+[data-theme="light"] .contact-form:hover {
+  box-shadow: 0 25px 45px rgba(15, 61, 31, 0.12);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group select,
+[data-theme="light"] .form-group textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(31, 93, 42, 0.15);
+}
+
+[data-theme="light"] .method-icon,
+[data-theme="light"] .social-btn {
+  background: rgba(31, 93, 42, 0.08);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 60px 0 40px;
+  }
+  
+  .section-head {
+    margin-bottom: 40px;
+  }
+  
+  .section-head h1 {
+    font-size: clamp(24px, 4vw, 36px);
+  }
+  
+  .section-head p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+  
+  .contact-wrapper {
+    gap: 30px;
+    padding: 0 15px;
+  }
+  
+  .contact-info-section {
+    gap: 20px;
+  }
+  
+  .info-item {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .info-icon {
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .info-content h3 {
+    font-size: 1rem;
+  }
+  
+  .info-content p {
+    font-size: 0.95rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-page {
+    padding: 50px 0 30px;
+  }
+  
+  .section-head {
+    margin-bottom: 30px;
+  }
+  
+  .section-head h1 {
+    font-size: clamp(22px, 3.5vw, 28px);
+    margin-bottom: 12px;
+  }
+  
+  .section-head p {
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    padding: 0 10px;
+  }
+  
+  .contact-wrapper {
+    gap: 25px;
+    padding: 0 10px;
+  }
+  
+  .contact-info-section {
+    gap: 15px;
+  }
+  
+  .info-item {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+  }
+  
+  .info-item:hover {
+    transform: translateX(3px);
+  }
+  
+  .info-icon {
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .info-content h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .info-content p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-form {
+    gap: 16px;
+  }
+  
+  .form-group {
+    gap: 6px;
+  }
+  
+  .form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 11px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .form-group textarea {
+    min-height: 120px;
+  }
+}
